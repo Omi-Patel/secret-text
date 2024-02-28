@@ -22,7 +22,7 @@ function App() {
       });
 
       // const generatedId = Math.random().toString(36).substring(2, 8);
-      const secretLink = `http://localhost:5173/reveal/${docRef.id}`;
+      const secretLink = `https://secret-text.vercel.app/reveal/${docRef.id}`;
       // console.log(secretLink);
 
       // console.log(docRef.id);
