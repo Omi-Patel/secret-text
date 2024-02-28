@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import RevealText from "./RevealText";
 import copy from "clipboard-copy";
+import { NavLink } from "react-router-dom";
 
 const SecretLink = ({ secretLink }) => {
   const id = secretLink.split("/").pop();
@@ -24,7 +25,7 @@ const SecretLink = ({ secretLink }) => {
         <div className="bg-blue-300 m-4 rounded-lg">
           <p className="p-4">Generated Secret Link:</p>
 
-          {/* <NavLink to={`/reveal/${id}`}>{secretLink}</NavLink> */}
+          <NavLink to={`/reveal/${id}`}>{secretLink}</NavLink>
           <div className="text-wrap px-2">
             <h2 className="font-bold">{secretLink}</h2>
           </div>
