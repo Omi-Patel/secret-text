@@ -25,8 +25,8 @@ const SecretLink = ({ secretLink }) => {
         <div className="bg-blue-300 m-4 rounded-lg">
           <p className="p-4">Generated Secret Link:</p>
 
-          {/* <NavLink to={`https://secret-text.vercel.app/reveal/${id}`}>{secretLink}</NavLink> */}
-          <a href={`/reveal/${id}`} target="_blank">{secretLink}</a>
+          <NavLink to={`/reveal/${id}`}>{secretLink}</NavLink>
+          {/* <a href={`/reveal/${id}`} target="_blank">{secretLink}</a> */}
           <div className="text-wrap px-2">
             <h2 className="font-bold">{secretLink}</h2>
           </div>
