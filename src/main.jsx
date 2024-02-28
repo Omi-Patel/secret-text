@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/reveal/:id" element={<RevealText />} />
+        <Route path="https://secret-text.vercel.app/reveal/:id" element={<RevealText />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -21,7 +21,7 @@ function App() {
         data: `${inputText}`,
       });
 
-      const generatedId = Math.random().toString(36).substring(2, 8);
+      // const generatedId = Math.random().toString(36).substring(2, 8);
       const secretLink = `https://secret-text.vercel.app/reveal/${docRef.id}`;
       // console.log(secretLink);
 
